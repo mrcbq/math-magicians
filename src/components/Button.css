@@ -1,0 +1,21 @@
+button {
+  border: 1px solid #d1d1d1;
+  background-color: #e0e0e0;
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.bg-orange {
+  background-color: #f5913e;
+}
+
+button:hover {
+  background-color: #931621;
+}
