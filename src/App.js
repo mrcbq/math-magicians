@@ -1,10 +1,17 @@
+import Calculator from './components/Calculator';
+import ButtonBox from './components/ButtonBox';
+import Screen from './components/Screen';
+import Wrapper from './components/Wrapper';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <Wrapper>
+      <Screen value="0" />
+      <ButtonBox>
+        <Calculator />
+      </ButtonBox>
+    </Wrapper>
   );
 }
 
