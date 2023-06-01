@@ -2,7 +2,6 @@ import React from 'react';
 import Calculator from './components/Calculator';
 import ButtonBox from './components/ButtonBox';
 import Screen from './components/Screen';
-import './App.css';
 
 function App() {
   const [displayValue, setDisplayValue] = React.useState('0');
