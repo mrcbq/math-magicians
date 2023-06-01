@@ -4,7 +4,7 @@ import './Calculator.css';
 const Calculator = ({ children }) => <div className="calculator">{children}</div>;
 
 Calculator.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
 export default Calculator;
