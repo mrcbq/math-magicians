@@ -42,7 +42,6 @@ is a website for all fans of mathematics. It is a Single Page App (SPA) that all
 - JS
 - CSS
 - Webpack
-- Jest
 - React.js
 
 <details>
@@ -50,8 +49,6 @@ is a website for all fans of mathematics. It is a Single Page App (SPA) that all
   - HTML<br>
   - JS<br>
   - CSS<br>
-  - Webpack<br>
-  - Jest
   - React
 </details>
 
@@ -67,9 +64,9 @@ is a website for all fans of mathematics. It is a Single Page App (SPA) that all
 
 ### Key Features <a name="key-features"></a>
 
-- **Cards with characters**
-- **Popup windows**
-- **Likes and comments for characters**
+- **Calculator Using React**
+- **Use State Hook**
+- **Quotes from API**
 
 <!-- LIVE DEMO -->
 
