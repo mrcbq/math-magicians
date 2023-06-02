@@ -2,6 +2,7 @@ import React from 'react';
 import Calculator from './components/Calculator';
 import ButtonBox from './components/ButtonBox';
 import Screen from './components/Screen';
+import Quotes from './components/Quotes';
 
 function App() {
   const [displayValue, setDisplayValue] = React.useState('0');
@@ -12,10 +13,13 @@ function App() {
   };
 
   return (
-    <Calculator>
-      <Screen value={displayValue} />
-      <ButtonBox onButtonClick={handleButtonClick} />
-    </Calculator>
+    <>
+      <Calculator>
+        <Screen value={displayValue} />
+        <ButtonBox onButtonClick={handleButtonClick} />
+      </Calculator>
+      <Quotes />
+    </>
   );
 }
 
