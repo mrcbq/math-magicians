@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 function Quotes() {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,24 +19,31 @@ function Quotes() {
       );
       const data = await response.json();
       setData(data);
+      setIsLoading(false);
       // console.log(data);
     };
     fetchData();
-  }, [setData]);
+  }, []);
 
   return (
     <ul>
-      {data.map((item) => (
-        <li key={item.category}>
-          {item.quote}
-          {' '}
-          <br />
-          {' '}
-          -
-          {' '}
-          {item.author}
+      {isLoading ? (
+        <li>Loading...</li>
+      ) : (
+        <li>
+          {data.map((item) => (
+            <li key={item.category}>
+              {item.quote}
+              {' '}
+              <br />
+              {' '}
+              -
+              {' '}
+              {item.author}
+            </li>
+          ))}
         </li>
-      ))}
+      )}
     </ul>
   );
 }
