@@ -36,7 +36,6 @@ function Quotes() {
       {data.map((item) => (
         <p key={1}>
           {item.quote}
-          {' '}
           <br />
           {' '}
           -
