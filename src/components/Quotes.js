@@ -18,7 +18,7 @@ function Quotes() {
       );
       const data = await response.json();
       setData(data);
-      console.log(data);
+      // console.log(data);
     };
     fetchData();
   }, [setData]);
