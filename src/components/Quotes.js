@@ -10,7 +10,7 @@ function Quotes() {
         'X-Api-Key': 'FXOCS/tG2JzdRhoyqGV8tQ==3JGYgTMkA2vzJo1K',
       };
       const response = await fetch(
-        'https://api.api-ninjas.com/v1/quotes?category=success',
+        'https://api.api-ninjas.com/v1/quotes?category=men',
         {
           method: 'GET',
           headers: headersList,
