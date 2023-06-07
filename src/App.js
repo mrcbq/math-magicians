@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Quotes from './components/Quotes';
 import Home from './components/Home';
@@ -8,15 +8,15 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Calculator />} />
+        <Route path="/" element={<Calculator />} basename="/https://mrcbq.github.io/math-magicians/" />
         <Route path="/quotes" element={<Quotes />} />
         <Route path="/home" element={<Home />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
