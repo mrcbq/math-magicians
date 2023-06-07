@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
 
-const Button = ({ className, value, onClick }) => (
-  <button className={className} onClick={onClick} type="button">
-    {value}
-  </button>
-);
+export default function Button({ className, value, onClick }) {
+  return (
+    <button className={className} onClick={onClick} type="button">
+      {value}
+    </button>
+  );
+}
 
 Button.propTypes = {
   className: PropTypes.string,
@@ -20,5 +22,3 @@ Button.defaultProps = {
     '';
   },
 };
-
-export default Button;
