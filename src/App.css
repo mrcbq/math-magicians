@@ -1,8 +1,9 @@
 #root {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 5% 10%;
+
+  /* align-items: center; */
 
   /* grid-template-columns: 1fr 1fr; */
 }

@@ -10,7 +10,7 @@ export default function Navbar() {
           <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/home">Home</NavLink>
         </li>
         <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">calculator</NavLink>
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Calculator</NavLink>
         </li>
         <li>
           <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/quotes">Quotes</NavLink>

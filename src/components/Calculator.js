@@ -2,7 +2,6 @@ import React from 'react';
 import ButtonBox from './ButtonBox';
 import Screen from './Screen';
 import './Calculator.css';
-// import PropTypes from 'prop-types';
 
 const Calculator = () => {
   const [displayValue, setDisplayValue] = React.useState('0');
@@ -13,15 +12,14 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator">
-      <Screen value={displayValue} />
-      <ButtonBox onButtonClick={handleButtonClick} />
+    <div id="calcuContainer">
+      <h2>Let&apos;s do some math!</h2>
+      <div className="calculator">
+        <Screen value={displayValue} />
+        <ButtonBox onButtonClick={handleButtonClick} />
+      </div>
     </div>
   );
 };
-
-// Calculator.propTypes = {
-//   children: PropTypes.arrayOf(PropTypes.node).isRequired,
-// };
 
 export default Calculator;

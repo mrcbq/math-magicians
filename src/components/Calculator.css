@@ -1,3 +1,8 @@
+#calcuContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .calculator {
   margin: 10% auto;
   width: 340px;

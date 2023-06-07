@@ -34,14 +34,14 @@ function Quotes() {
       {error ? <p>{error.message}</p> : ''}
       {isLoading ? <p>Loading...</p> : ''}
       {data.map((item) => (
-        <p key={1}>
+        <h4 key={1}>
           {item.quote}
           <br />
           {' '}
           -
           {' '}
           {item.author}
-        </p>
+        </h4>
       ))}
     </>
   );
